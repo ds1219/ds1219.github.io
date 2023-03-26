@@ -37,6 +37,17 @@
         white-space: nowrap;
       }
 
+      #skills {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+      }
+
+      #skills h1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+
       @media only screen and (max-width: 1064px) {
         #intro-card {
           grid-template-columns: auto;
@@ -46,6 +57,16 @@
 
         #content {
           padding: 1em;
+        }
+
+        #skills {
+          display: grid;
+          grid-template-columns: auto;
+        }
+
+        #skills h1 {
+          grid-column-start: 1;
+          grid-column-end: 1;
         }
       }
     </style>
@@ -68,11 +89,25 @@
           <p>
             Hi, welcome to my personal blog and portfolio page. Here you can
             find a collection of my past projects and notes i have written
-            through my developer experiences. I hope you find then useful.
+            through my developer experiences. I hope you find them useful.
           </p>
         </div>
       </div>
-      <div id="skills" class="card"><h1>Skills</h1></div>
+      <div id="skills" class="card">
+        <h1>Skills</h1>
+        <div class="card skill"><h1>Python</h1></div>
+        <div class="card skill"><h1>HTML</h1></div>
+        <div class="card skill"><h1>CSS</h1></div>
+        <div class="card skill"><h1>Linux</h1></div>
+        <div class="card skill"><h1>Plotly</h1></div>
+        <div class="card skill"><h1>Flask</h1></div>
+        <div class="card skill"><h1>Dash</h1></div>
+        <div class="card skill"><h1>Git</h1></div>
+        <div class="card skill"><h1>Github</h1></div>
+        <div class="card skill"><h1>Java</h1></div>
+        <div class="card skill"><h1>Ubuntu</h1></div>
+        <div class="card skill"><h1>JQuery</h1></div>
+      </div>
       <div id="projects" class="card"><h1>Projects</h1></div>
     </div>
 
