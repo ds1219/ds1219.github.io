@@ -28,6 +28,8 @@ nav {
   display: grid;
   grid-template-columns: auto 70vw auto auto auto;
   font-size: 1.2em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 nav .links {
@@ -69,5 +71,7 @@ footer {
 @media only screen and (max-width: 1064px) {
   nav {
     grid-template-columns: auto auto auto auto auto;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
