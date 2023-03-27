@@ -32,7 +32,8 @@
         white-space: nowrap;
       }
 
-      #skills {
+      #skills,
+      #projects {
         display: grid;
         background-color: #0077b6;
         color: 0077B6;
@@ -43,11 +44,16 @@
         color: black;
       }
       .heading {
-        text-align: center;
         grid-column-start: 1;
         grid-column-end: 5;
         text-decoration: underline;
         font-size: 2em;
+      }
+
+      .heading2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-size: 1.5em;
       }
 
       .skill p {
@@ -66,20 +72,17 @@
           padding-bottom: 2em;
         }
 
-        #skills {
+        #skills,
+        #projects {
           display: grid;
           grid-template-columns: auto;
-        }
-
-        #skills .heading {
-          grid-column-start: 1;
-          grid-column-end: 1;
           text-align: center;
         }
 
-        .skill p {
-          border-radius: 4px;
-          border-radius: 10px;
+        .heading {
+          grid-column-start: 1;
+          grid-column-end: 1;
+          text-align: center;
         }
       }
     </style>
@@ -121,7 +124,30 @@
         <div class="skill"><p>Ubuntu</p></div>
         <div class="skill"><p>JQuery</p></div>
       </div>
-      <div id="projects" class="card"><h1 class="heading">Projects</h1></div>
+      <div id="projects" class="card">
+        <h1 class="heading">Projects</h1>
+        <div>
+          <p>
+            <a class="heading2">Harisum</a><br />
+            github.com/ds1219/harisum <br />
+            A Cross-Platform GUI and CMD checksum verifier. Supports SHA-1,
+            SHA-256 and MD5. <br />
+            <em>Technologies Used</em> : Python, PySimpleGui
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p>
+            <a class="heading2">AI powered Attendance Verification System</a
+            ><br />
+            Attendance Verification System Using QR Codes, Mobile Phones and AI
+            generated.<br />
+            <em>Technologies Used</em> : Flask, Python, MySQL, Pytest, Git,
+            Github, GCP, Ubuntu
+          </p>
+        </div>
+      </div>
     </div>
 
     <footer>
