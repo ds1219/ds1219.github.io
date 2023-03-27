@@ -18,11 +18,11 @@
       }
       .card {
         border-radius: 10px;
-        color: white;
-        background-color: black;
+        color: #ffffff;
+        background-color: #14213d;
 
         padding-left: 1em;
-        padding-right: 2em;
+        padding-right: 1em;
         padding-bottom: 1em;
       }
       #intro-card {
@@ -37,6 +37,22 @@
         white-space: nowrap;
       }
 
+      #skills {
+        display: grid;
+      }
+
+      .heading {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        text-decoration: underline;
+        font-size: 2em;
+      }
+
+      .skill p {
+        font-size: 1.5em;
+      }
+
       @media only screen and (max-width: 1064px) {
         #intro-card {
           grid-template-columns: auto;
@@ -47,14 +63,31 @@
         #content {
           padding: 1em;
         }
+
+        #skills {
+          display: grid;
+          grid-template-columns: auto;
+        }
+
+        #skills .heading {
+          grid-column-start: 1;
+          grid-column-end: 1;
+          text-align: center;
+        }
+
+        .skill p {
+          border-radius: 4px;
+          border-radius: 10px;
+          text-align: center;
+        }
       }
     </style>
   </head>
   <body>
     <nav>
-      <a href="ds1219.github.io" class="logo">ds1219</a>
+      <a href="index.html" class="logo">ds1219</a>
       <a></a>
-      <a href="home.html" class="links">Home</a>
+      <a href="index.html" class="links">Home</a>
       <a href="projects.html" class="links">Projects</a>
       <a href="notes.html" class="links">Notes</a>
     </nav>
@@ -68,12 +101,26 @@
           <p>
             Hi, welcome to my personal blog and portfolio page. Here you can
             find a collection of my past projects and notes i have written
-            through my developer experiences. I hope you find then useful.
+            through my developer experiences. I hope you find them useful.
           </p>
         </div>
       </div>
-      <div id="skills" class="card"><h1>Skills</h1></div>
-      <div id="projects" class="card"><h1>Projects</h1></div>
+      <div id="skills" class="card">
+        <h1 class="heading">Skills</h1>
+        <div class="skill"><p>Python</p></div>
+        <div class="skill"><p>HTML</p></div>
+        <div class="skill"><p>CSS</p></div>
+        <div class="skill"><p>Linux</p></div>
+        <div class="skill"><p>Plotly</p></div>
+        <div class="skill"><p>Flask</p></div>
+        <div class="skill"><p>Dash</p></div>
+        <div class="skill"><p>Git</p></div>
+        <div class="skill"><p>Github</p></div>
+        <div class="skill"><p>Java</p></div>
+        <div class="skill"><p>Ubuntu</p></div>
+        <div class="skill"><p>JQuery</p></div>
+      </div>
+      <div id="projects" class="card"><h1 class="heading">Projects</h1></div>
     </div>
 
     <footer>
