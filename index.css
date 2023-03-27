@@ -6,6 +6,7 @@ body {
   font-family: "Faustina", serif;
   height: 100%;
   margin: 0;
+  background-color: #e5e5e5;
 }
 
 /*revert chrome default css*/
@@ -24,7 +25,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: #14213d;
   overflow: hidden;
   display: grid;
   grid-template-columns: auto 70vw auto auto auto;
@@ -44,8 +45,8 @@ nav .links {
 }
 
 nav .links:hover {
-  background-color: green;
-  color: black;
+  background-color: #fca311;
+  color: #ffffff;
 }
 
 nav .logo {
@@ -62,8 +63,8 @@ nav .logo:hover {
 
 footer {
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: #14213d;
+  color: #ffffff;
   text-align: center;
   font-family: "Roboto Slab", serif;
   padding-top: 0.7em;
