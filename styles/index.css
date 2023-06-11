@@ -27,7 +27,7 @@ p {
 
 body {
   display: grid;
-  grid-template-rows: 5vh auto 5vh;
+  grid-template-rows: 3em auto 3em;
 }
 
 /* footer */
