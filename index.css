@@ -66,3 +66,73 @@ footer {
   font-family: "Roboto Slab", serif;
   padding-top: 0.7em;
 }
+
+#content {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.card {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+#intro-card {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#intro-card .emoticon {
+  width: 100%;
+  font-size: 5em;
+  white-space: nowrap;
+}
+
+#skills,
+#projects {
+  display: grid;
+}
+
+.heading {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-decoration: underline;
+  font-size: 2em;
+}
+
+.heading2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 1.5em;
+}
+
+.skill p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1064px) {
+  #intro-card {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    column-gap: 0em;
+  }
+
+  .card {
+    padding-bottom: 2em;
+  }
+
+  #skills,
+  #projects {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .heading {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+  }
+}

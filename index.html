@@ -1,174 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="stylesheet" href="index.css" />
-  <style>
-    #content {
-      display: grid;
-      grid-template-rows: auto auto auto auto;
-    }
+  <body>
+    <nav>
+      <a href="index.html" class="logo">ds1219</a>
+      <a></a>
+      <a href="index.html#skills" class="links">Skills</a>
+      <a href="index.htm#projects" class="links">Projects</a>
+      <a href="notes.html" class="links">Notes</a>
+    </nav>
 
-    .card {
-      padding-left: 1em;
-      padding-right: 1em;
-      padding-bottom: 1em;
-    }
-
-    #intro-card {
-      display: grid;
-      grid-template-columns: auto auto;
-    }
-
-    #intro-card .emoticon {
-      width: 100%;
-      font-size: 5em;
-      white-space: nowrap;
-    }
-
-    #skills,
-    #projects {
-      display: grid;
-    }
-
-    .heading {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      text-decoration: underline;
-      font-size: 2em;
-    }
-
-    .heading2 {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      font-size: 1.5em;
-    }
-
-    .skill p {
-      font-size: 1.5em;
-      text-align: center;
-    }
-
-    @media only screen and (max-width: 1064px) {
-      #intro-card {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        column-gap: 0em;
-      }
-
-      .card {
-        padding-bottom: 2em;
-      }
-
-      #skills,
-      #projects {
-        display: grid;
-        grid-template-columns: auto;
-        text-align: center;
-      }
-
-      .heading {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        text-align: center;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <nav>
-    <a href="index.html" class="logo">ds1219</a>
-    <a></a>
-    <a href="index.html#skills" class="links">Skills</a>
-    <a href="index.htm#projects" class="links">Projects</a>
-    <a href="notes.html" class="links">Notes</a>
-  </nav>
-
-  <div id="content">
-    <div id="intro-card" class="card">
-      <h1 class="emoticon">(⌐■_■)</h1>
-      <div>
-        <h1>Dulan S.</h1>
-        <h2>Software Engineer</h2>
-        <p>
-          Hi, welcome to my personal blog and portfolio page. Here you can
-          find a collection of my past projects and notes i have written
-          through my developer experiences. I hope you find them useful.
-        </p>
+    <div id="content">
+      <div id="intro-card" class="card">
+        <h1 class="emoticon">(⌐■_■)</h1>
+        <div>
+          <h1>Dulan S.</h1>
+          <h2>Software Engineer</h2>
+          <p>
+            Hi, welcome to my personal blog and portfolio page. Here you can
+            find a collection of my past projects and notes i have written
+            through my developer experiences. I hope you find them useful.
+          </p>
+        </div>
       </div>
+      <div id="skills" class="card">
+        <h1 class="heading">Skills</h1>
+        <div class="skill">
+          <p>Python</p>
+        </div>
+        <div class="skill">
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <p>Linux</p>
+        </div>
+        <div class="skill">
+          <p>Plotly</p>
+        </div>
+        <div class="skill">
+          <p>Flask</p>
+        </div>
+        <div class="skill">
+          <p>Dash</p>
+        </div>
+        <div class="skill">
+          <p>Git</p>
+        </div>
+        <div class="skill">
+          <p>Github</p>
+        </div>
+        <div class="skill">
+          <p>Java</p>
+        </div>
+        <div class="skill">
+          <p>Ubuntu</p>
+        </div>
+        <div class="skill">
+          <p>JQuery</p>
+        </div>
+      </div>
+      <section id="projects" class="card">
+        <h1 class="heading">Projects</h1>
+        <div>
+          <p>
+            <a class="heading2">Harisum</a><br />
+            github.com/ds1219/harisum <br />
+            A Cross-Platform GUI and CMD checksum verifier. Supports SHA-1,
+            SHA-256 and MD5. <br />
+            <em>Technologies Used</em> : Python, PySimpleGui
+          </p>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p>
+            <a class="heading2">AI powered Attendance Verification System</a
+            ><br />
+            Attendance Verification System Using QR Codes, Mobile Phones and AI
+            generated.<br />
+            <em>Technologies Used</em> : Flask, Python, MySQL, Pytest, Git,
+            Github, GCP, Ubuntu
+          </p>
+        </div>
+      </section>
     </div>
-    <div id="skills" class="card">
-      <h1 class="heading">Skills</h1>
-      <div class="skill">
-        <p>Python</p>
-      </div>
-      <div class="skill">
-        <p>HTML</p>
-      </div>
-      <div class="skill">
-        <p>CSS</p>
-      </div>
-      <div class="skill">
-        <p>Linux</p>
-      </div>
-      <div class="skill">
-        <p>Plotly</p>
-      </div>
-      <div class="skill">
-        <p>Flask</p>
-      </div>
-      <div class="skill">
-        <p>Dash</p>
-      </div>
-      <div class="skill">
-        <p>Git</p>
-      </div>
-      <div class="skill">
-        <p>Github</p>
-      </div>
-      <div class="skill">
-        <p>Java</p>
-      </div>
-      <div class="skill">
-        <p>Ubuntu</p>
-      </div>
-      <div class="skill">
-        <p>JQuery</p>
-      </div>
-    </div>
-    <section id="projects" class="card">
-      <h1 class="heading">Projects</h1>
-      <div>
-        <p>
-          <a class="heading2">Harisum</a><br />
-          github.com/ds1219/harisum <br />
-          A Cross-Platform GUI and CMD checksum verifier. Supports SHA-1,
-          SHA-256 and MD5. <br />
-          <em>Technologies Used</em> : Python, PySimpleGui
-        </p>
-      </div>
-      <br />
-      <br />
-      <div>
-        <p>
-          <a class="heading2">AI powered Attendance Verification System</a><br />
-          Attendance Verification System Using QR Codes, Mobile Phones and AI
-          generated.<br />
-          <em>Technologies Used</em> : Flask, Python, MySQL, Pytest, Git,
-          Github, GCP, Ubuntu
-        </p>
-      </div>
-    </section>
-  </div>
 
-  <footer>
-    <p>Made by ds1219</p>
-  </footer>
-</body>
-
+    <footer>
+      <p>Made by ds1219</p>
+    </footer>
+  </body>
 </html>
