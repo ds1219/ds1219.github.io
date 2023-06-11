@@ -5,21 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <style>
+      #intro-card {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2em;
+        margin-top: 10px;
+      }
+
+      #intro-card .emoticon {
+        width: 100%;
+        font-size: 5em;
+        white-space: nowrap;
+      }
+
+      .emoticon {
+        font-family: "Faustina", serif;
+        padding-top: 0px;
+      }
+
+      @media only screen and (max-width: 1064px) {
+        #intro-card {
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          column-gap: 0em;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <nav>
-      <a href="index.html" class="logo">ds1219</a>
+      <span><a href="index.html" class="logo">ds1219</a></span>
       <a></a>
-      <a href="index.html#skills" class="links">Skills</a>
-      <a href="index.htm#projects" class="links">Projects</a>
-      <a href="notes.html" class="links">Notes</a>
+      <span><a href="index.html#skills" class="links">Skills</a></span>
+      <span><a href="index.htm#projects" class="links">Projects</a></span>
+      <span><a href="notes.html" class="links">Notes</a></span>
     </nav>
 
     <div id="content">
       <div id="intro-card" class="card">
-        <h1 class="emoticon">(⌐■_■)</h1>
+        <p class="emoticon">(⌐■_■)</p>
         <div>
           <h1>Dulan S.</h1>
           <h2>Software Engineer</h2>
@@ -32,42 +59,30 @@
       </div>
       <div id="skills" class="card">
         <h1 class="heading">Skills</h1>
-        <div class="skill">
-          <p>Python</p>
-        </div>
-        <div class="skill">
-          <p>HTML</p>
-        </div>
-        <div class="skill">
-          <p>CSS</p>
-        </div>
-        <div class="skill">
-          <p>Linux</p>
-        </div>
-        <div class="skill">
-          <p>Plotly</p>
-        </div>
-        <div class="skill">
-          <p>Flask</p>
-        </div>
-        <div class="skill">
-          <p>Dash</p>
-        </div>
-        <div class="skill">
-          <p>Git</p>
-        </div>
-        <div class="skill">
-          <p>Github</p>
-        </div>
-        <div class="skill">
-          <p>Java</p>
-        </div>
-        <div class="skill">
-          <p>Ubuntu</p>
-        </div>
-        <div class="skill">
-          <p>JQuery</p>
-        </div>
+
+        <p>Python</p>
+
+        <p>HTML</p>
+
+        <p>CSS</p>
+
+        <p>Linux</p>
+
+        <p>Plotly</p>
+
+        <p>Flask</p>
+
+        <p>Dash</p>
+
+        <p>Git</p>
+
+        <p>Github</p>
+
+        <p>Java</p>
+
+        <p>Ubuntu</p>
+
+        <p>JQuery</p>
       </div>
       <section id="projects" class="card">
         <h1 class="heading">Projects</h1>

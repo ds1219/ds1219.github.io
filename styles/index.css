@@ -1,12 +1,22 @@
 /*Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,500;0,600;0,700;1,700&family=Kaisei+HarunoUmi:wght@500&family=Oswald:wght@300&family=Roboto+Slab&display=swap");
+/*external stylesheets*/
+@import "nav.css";
+
+:root {
+  --background: #222831;
+  --foreground: #393e46;
+  --text: #eeeeee;
+  --accent: #00adb5;
+}
 
 html,
 body {
   font-family: "Faustina", serif;
   height: 100%;
   margin: 0;
-  background-color: #e5e5e5;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 /*revert chrome default css*/
@@ -17,54 +27,17 @@ p {
 
 body {
   display: grid;
-  grid-template-rows: 7vh auto 5vh;
+  grid-template-rows: 5vh auto 5vh;
 }
 
-.emoticon {
-  font-family: "Faustina", serif;
-}
-
-nav {
-  background-color: #14213d;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  padding: 0em 1em 0em;
-  font-size: 1.2em;
-  border-radius: 50px;
-  margin: 10px 10px 10px;
-}
-
-nav .links {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 0.7em;
-}
-
-nav .links:hover {
-  background-color: #fca311;
-  color: #ffffff;
-}
-
-nav .logo {
-  text-align: center;
-  font-family: "Faustina", serif;
-  color: white;
-  text-decoration: none;
-  padding-top: 0.6em;
-}
-
-nav .logo:hover {
-  font-style: italic;
-}
-
+/* footer */
 footer {
   width: 100%;
-  background-color: #14213d;
-  color: #ffffff;
+  background-color: var(--foreground);
   text-align: center;
   font-family: "Roboto Slab", serif;
-  padding-top: 0.7em;
+  display: grid;
+  place-items: center;
 }
 
 #content {
@@ -76,20 +49,14 @@ footer {
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
+  column-gap: 1em;
 }
 
-#intro-card {
+#skill {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
 }
 
-#intro-card .emoticon {
-  width: 100%;
-  font-size: 5em;
-  white-space: nowrap;
-}
-
-#skills,
 #projects {
   display: grid;
 }
@@ -107,27 +74,25 @@ footer {
   font-size: 1.5em;
 }
 
-.skill p {
+#skills p {
   font-size: 1.5em;
   text-align: center;
 }
 
 @media only screen and (max-width: 1064px) {
-  #intro-card {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    column-gap: 0em;
-  }
-
   .card {
     padding-bottom: 2em;
   }
 
-  #skills,
   #projects {
     display: grid;
     grid-template-columns: auto;
     text-align: center;
+  }
+
+  #skill {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
   }
 
   .heading {
